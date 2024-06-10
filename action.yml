@@ -1,0 +1,31 @@
+name: 'Cloud Express: free github actions workflow'
+description: ''
+author: 'kvendingoldo'
+
+branding:
+  icon: 'play-circle'
+  color: 'green'
+
+inputs:
+  username
+  pkgname:
+    description: ''
+    required: true
+    default: ''
+  pkgver:
+    description: ''
+    required: true
+    default: ''
+  pkgrel:
+    description: ''
+    required: false
+    default: '0'
+  sha512sums:
+    description: ''
+    required: false
+    default: '0'
+
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
